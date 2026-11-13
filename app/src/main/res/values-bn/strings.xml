@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TutorFlow</string>
+    <string name="app_subtitle">স্মার্ট টিউশন ম্যানেজমেন্ট সিস্টেম</string>
+    <string name="app_tagline">স্মার্টভাবে পরিচালনা করুন, আরও ভালো পড়ান।</string>
+    <string name="back">পিছনে</string>
+    <string name="logo_description">TutorFlow লোগো</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">হোম</string>
+    <string name="nav_students">শিক্ষার্থী</string>
+    <string name="nav_attendance">উপস্থিতি</string>
+    <string name="nav_payments">পেমেন্ট</string>
+    <string name="nav_more">আরও</string>
+    <string name="nav_search">সার্চ</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_welcome">স্বাগতম, %1$s!</string>
+    <string name="greeting_welcome_no_name">স্বাগতম!</string>
+    <string name="dash_overview">সারসংক্ষেপ</string>
+    <string name="dash_quick_actions">দ্রুত কাজ</string>
+    <string name="dash_total_students">মোট শিক্ষার্থী</string>
+    <string name="dash_active_students">সক্রিয় শিক্ষার্থী</string>
+    <string name="dash_inactive_students">নিষ্ক্রিয় শিক্ষার্থী</string>
+    <string name="dash_classes">মোট ক্লাস</string>
+    <string name="dash_batches">মোট ব্যাচ</string>
+    <string name="dash_today_attendance">আজকের উপস্থিতি</string>
+    <string name="dash_monthly_collection">মাসিক ফি আদায়</string>
+    <string name="dash_outstanding">মোট বকেয়া</string>
+    <string name="dash_not_connected">ফেজ ৩-এ শিক্ষার্থীর ডাটাবেস তৈরি হলে এখানে সত্যিকারের হিসাব দেখা যাবে। এখনো কিছু গোনা হচ্ছে না।</string>
+
+    <!-- Quick actions -->
+    <string name="qa_add_student">শিক্ষার্থী যোগ</string>
+    <string name="qa_take_attendance">উপস্থিতি নিন</string>
+    <string name="qa_collect_fee">ফি আদায়</string>
+    <string name="qa_add_exam">পরীক্ষা যোগ</string>
+    <string name="qa_enter_marks">নম্বর এন্ট্রি</string>
+    <string name="qa_id_card">আইডি কার্ড</string>
+    <string name="qa_admit_card">প্রবেশপত্র</string>
+    <string name="qa_send_message">অভিভাবককে বার্তা</string>
+    <string name="qa_backup">ব্যাকআপ নিন</string>
+
+    <!-- More hub -->
+    <string name="more_title">আরও</string>
+    <string name="more_batches">ব্যাচ</string>
+    <string name="more_classes">ক্লাস</string>
+    <string name="more_exams">পরীক্ষা</string>
+    <string name="more_results">ফলাফল</string>
+    <string name="more_documents">ডকুমেন্ট</string>
+    <string name="more_messages">বার্তা</string>
+    <string name="more_calendar">ক্যালেন্ডার</string>
+    <string name="more_reports">রিপোর্ট</string>
+    <string name="more_expenses">খরচ</string>
+    <string name="more_backup">ব্যাকআপ ও রিস্টোর</string>
+    <string name="more_settings">সেটিংস</string>
+    <string name="more_about">সম্পর্কে</string>
+
+    <!-- Modules not built yet -->
+    <string name="phase_3">ফেজ ৩</string>
+    <string name="phase_4">ফেজ ৪</string>
+    <string name="phase_5">ফেজ ৫</string>
+    <string name="phase_6">ফেজ ৬</string>
+    <string name="coming_title">এখনো তৈরি হয়নি</string>
+    <string name="coming_body">%1$s তৈরির পরিকল্পনা আছে %2$s-এ। এখানে এখনো কিছু সংরক্ষণ করা যাবে না।</string>
+    <string name="search_title">সার্চ</string>
+
+    <!-- Settings -->
+    <string name="settings_title">সেটিংস</string>
+    <string name="settings_language">ভাষা</string>
+    <string name="settings_theme">থিম</string>
+    <string name="lang_bn">বাংলা</string>
+    <string name="lang_en">English</string>
+    <string name="theme_system">সিস্টেম ডিফল্ট</string>
+    <string name="theme_light">লাইট</string>
+    <string name="theme_dark">ডার্ক</string>
+    <string name="settings_note">ফেজ ৩-এ ডাটাবেসের সাথে আরও সেটিংস যুক্ত হবে।</string>
+
+    <!-- Onboarding -->
+    <string name="onb_title">TutorFlow সেট আপ করুন</string>
+    <string name="onb_subtitle">কোনো অ্যাকাউন্ট বা ইন্টারনেট লাগবে না। সব তথ্য এই ফোনেই থাকবে।</string>
+    <string name="onb_teacher_name">শিক্ষকের নাম</string>
+    <string name="onb_institution">প্রতিষ্ঠানের নাম (ঐচ্ছিক)</string>
+    <string name="onb_address">প্রতিষ্ঠানের ঠিকানা (ঐচ্ছিক)</string>
+    <string name="onb_phone">ফোন নম্বর (ঐচ্ছিক)</string>
+    <string name="onb_email">ইমেইল (ঐচ্ছিক)</string>
+    <string name="onb_session">শিক্ষাবর্ষ, যেমন ২০২৬ (ঐচ্ছিক)</string>
+    <string name="onb_start">শুরু করুন</string>
+    <string name="onb_name_required">শিক্ষকের নাম লিখুন।</string>
+
+    <!-- About -->
+    <string name="about_title">সম্পর্কে</string>
+    <string name="about_developer">ডেভেলপার</string>
+    <string name="about_developer_name">আব্দুল্লাহ আল ফাহিম</string>
+    <string name="about_qualification">বি.এসসি. (সম্মান), প্রাণিবিদ্যা বিভাগ</string>
+    <string name="about_institution">গুরুদয়াল সরকারি কলেজ</string>
+    <string name="about_session">সেশন ২০২০–২০২১</string>
+    <string name="about_version">সংস্করণ %1$s</string>
+    <string name="about_contact">যোগাযোগ</string>
+    <string name="about_copyright">© ২০২৬ আব্দুল্লাহ আল ফাহিম। সর্বস্বত্ব সংরক্ষিত।</string>
+</resources>

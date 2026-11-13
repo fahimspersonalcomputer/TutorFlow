@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppCompat parent is required for per-app language switching. Compose draws all real UI. -->
+    <style name="Theme.TutorFlow" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/tf_navy</item>
+    </style>
+</resources>

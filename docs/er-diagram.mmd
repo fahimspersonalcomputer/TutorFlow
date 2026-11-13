@@ -1,0 +1,199 @@
+erDiagram
+    ACADEMIC_SESSIONS ||--o{ STUDENTS : "session"
+    ACADEMIC_SESSIONS ||--o{ BATCHES : "session"
+    ACADEMIC_SESSIONS ||--o{ EXAMINATIONS : "session"
+    GUARDIANS ||--o{ STUDENTS : "guards"
+    CLASSES ||--o{ STUDENTS : "enrolled in"
+    CLASSES ||--o{ BATCHES : "has"
+    CLASSES ||--o{ EXAMINATIONS : "for"
+
+    STUDENTS ||--o{ STUDENT_BATCH : "joins"
+    BATCHES ||--o{ STUDENT_BATCH : "contains"
+    STUDENTS ||--o{ STUDENT_SUBJECTS : "studies"
+    SUBJECTS ||--o{ STUDENT_SUBJECTS : "taken by"
+    BATCHES ||--o{ BATCH_SUBJECTS : "teaches"
+    SUBJECTS ||--o{ BATCH_SUBJECTS : "taught in"
+
+    STUDENTS ||--o{ ATTENDANCE : "marked"
+    BATCHES ||--o{ ATTENDANCE : "on"
+
+    STUDENTS ||--o{ FEE_STRUCTURES : "fee plan"
+    BATCHES |o--o{ FEE_STRUCTURES : "optional"
+    STUDENTS ||--o{ FEE_CHARGES : "owes"
+    FEE_STRUCTURES |o--o{ FEE_CHARGES : "generates"
+    STUDENTS ||--o{ PAYMENTS : "pays"
+    PAYMENTS |o--o| PAYMENTS : "reverses"
+    PAYMENTS ||--o{ PAYMENT_ALLOCATIONS : "split into"
+    FEE_CHARGES ||--o{ PAYMENT_ALLOCATIONS : "settled by"
+
+    EXAMINATIONS ||--o{ EXAM_SUBJECTS : "contains"
+    SUBJECTS ||--o{ EXAM_SUBJECTS : "tested in"
+    EXAM_SUBJECTS ||--o{ MARKS : "scored"
+    STUDENTS ||--o{ MARKS : "obtains"
+    BATCHES |o--o{ EXAMINATIONS : "optional"
+    GRADE_SCALES ||--o{ GRADE_SCALE_ROWS : "defines"
+    GRADE_SCALES ||--o{ EXAMINATIONS : "graded by"
+
+    STUDENTS ||--o{ GENERATED_DOCUMENTS : "has"
+    DOCUMENT_TEMPLATES ||--o{ GENERATED_DOCUMENTS : "rendered with"
+    STUDENTS ||--o{ MESSAGE_LOG : "contacted"
+    MESSAGE_TEMPLATES ||--o{ MESSAGE_LOG : "based on"
+
+    ACADEMIC_SESSIONS {
+        int id PK
+        text label UK
+        bool is_current
+    }
+    GUARDIANS {
+        int id PK
+        text name
+        text mobile_norm
+    }
+    CLASSES {
+        int id PK
+        text name UK
+        bool is_archived
+    }
+    STUDENTS {
+        int id PK
+        text student_code UK
+        text name_bn
+        text name_en
+        int guardian_id FK
+        int class_id FK
+        int session_id FK
+        text roll_no
+        text status
+        bool is_archived
+        text dedupe_key
+    }
+    BATCHES {
+        int id PK
+        int class_id FK
+        int session_id FK
+        text name
+        int class_days
+        int monthly_fee_minor
+        text status
+    }
+    STUDENT_BATCH {
+        int student_id PK
+        int batch_id PK
+        text status
+        text joined_on
+        text left_on
+    }
+    SUBJECTS {
+        int id PK
+        text name_en
+        text name_bn
+    }
+    STUDENT_SUBJECTS {
+        int student_id PK
+        int subject_id PK
+    }
+    BATCH_SUBJECTS {
+        int batch_id PK
+        int subject_id PK
+    }
+    ATTENDANCE {
+        int id PK
+        int student_id FK
+        int batch_id FK
+        text date
+        text status
+    }
+    FEE_STRUCTURES {
+        int id PK
+        int student_id FK
+        int batch_id FK
+        text category
+        int amount_minor
+        text effective_from
+        text effective_to
+    }
+    FEE_CHARGES {
+        int id PK
+        int student_id FK
+        int structure_id FK
+        text category
+        text period
+        int amount_minor
+        text status
+    }
+    PAYMENTS {
+        int id PK
+        text receipt_no UK
+        int student_id FK
+        int amount_minor
+        text type
+        int reverses_payment_id FK
+        text method
+        text paid_on
+    }
+    PAYMENT_ALLOCATIONS {
+        int payment_id PK
+        int charge_id PK
+        int amount_minor
+    }
+    EXAMINATIONS {
+        int id PK
+        text exam_code UK
+        text name
+        text type
+        int class_id FK
+        int batch_id FK
+        int grade_scale_id FK
+    }
+    EXAM_SUBJECTS {
+        int id PK
+        int exam_id FK
+        int subject_id FK
+        int total_marks
+        int pass_marks
+    }
+    MARKS {
+        int id PK
+        int exam_subject_id FK
+        int student_id FK
+        real written
+        real mcq
+        real practical
+        text status
+    }
+    GRADE_SCALES {
+        int id PK
+        text name
+    }
+    GRADE_SCALE_ROWS {
+        int id PK
+        int scale_id FK
+        real min_percent
+        text grade
+        real gpa_point
+    }
+    DOCUMENT_TEMPLATES {
+        int id PK
+        text doc_type
+        text design
+        text config_json
+    }
+    GENERATED_DOCUMENTS {
+        int id PK
+        int student_id FK
+        int template_id FK
+        text doc_type
+        text file_path
+    }
+    MESSAGE_TEMPLATES {
+        int id PK
+        text category
+        text body
+    }
+    MESSAGE_LOG {
+        int id PK
+        int student_id FK
+        int template_id FK
+        text channel
+        text state
+    }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TutorFlow</string>
+    <string name="app_subtitle">Smart Tuition Management System</string>
+    <string name="app_tagline">Manage Smarter. Teach Better.</string>
+    <string name="back">Back</string>
+    <string name="logo_description">TutorFlow logo</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_students">Students</string>
+    <string name="nav_attendance">Attendance</string>
+    <string name="nav_payments">Payments</string>
+    <string name="nav_more">More</string>
+    <string name="nav_search">Search</string>
+
+    <!-- Dashboard -->
+    <string name="greeting_welcome">Welcome back, %1$s!</string>
+    <string name="greeting_welcome_no_name">Welcome back!</string>
+    <string name="dash_overview">Overview</string>
+    <string name="dash_quick_actions">Quick actions</string>
+    <string name="dash_total_students">Total students</string>
+    <string name="dash_active_students">Active students</string>
+    <string name="dash_inactive_students">Inactive students</string>
+    <string name="dash_classes">Total classes</string>
+    <string name="dash_batches">Total batches</string>
+    <string name="dash_today_attendance">Today’s attendance</string>
+    <string name="dash_monthly_collection">Monthly fee collection</string>
+    <string name="dash_outstanding">Total outstanding dues</string>
+    <string name="dash_not_connected">Live figures appear once the student database is built in Phase 3. Nothing is counted yet.</string>
+
+    <!-- Quick actions -->
+    <string name="qa_add_student">Add student</string>
+    <string name="qa_take_attendance">Take attendance</string>
+    <string name="qa_collect_fee">Collect fee</string>
+    <string name="qa_add_exam">Add examination</string>
+    <string name="qa_enter_marks">Enter marks</string>
+    <string name="qa_id_card">Generate ID card</string>
+    <string name="qa_admit_card">Generate admit card</string>
+    <string name="qa_send_message">Message guardian</string>
+    <string name="qa_backup">Create backup</string>
+
+    <!-- More hub -->
+    <string name="more_title">More</string>
+    <string name="more_batches">Batches</string>
+    <string name="more_classes">Classes</string>
+    <string name="more_exams">Examinations</string>
+    <string name="more_results">Results</string>
+    <string name="more_documents">Documents</string>
+    <string name="more_messages">Messages</string>
+    <string name="more_calendar">Calendar</string>
+    <string name="more_reports">Reports</string>
+    <string name="more_expenses">Expenses</string>
+    <string name="more_backup">Backup &amp; restore</string>
+    <string name="more_settings">Settings</string>
+    <string name="more_about">About</string>
+
+    <!-- Modules not built yet -->
+    <string name="phase_3">Phase 3</string>
+    <string name="phase_4">Phase 4</string>
+    <string name="phase_5">Phase 5</string>
+    <string name="phase_6">Phase 6</string>
+    <string name="coming_title">Not built yet</string>
+    <string name="coming_body">%1$s is planned for %2$s of development. Nothing can be saved here yet.</string>
+    <string name="search_title">Search</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_theme">Theme</string>
+    <string name="lang_bn">বাংলা</string>
+    <string name="lang_en">English</string>
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_note">More settings arrive together with the database in Phase 3.</string>
+
+    <!-- Onboarding -->
+    <string name="onb_title">Set up TutorFlow</string>
+    <string name="onb_subtitle">No account and no internet needed. Everything stays on this phone.</string>
+    <string name="onb_teacher_name">Teacher name</string>
+    <string name="onb_institution">Institution name (optional)</string>
+    <string name="onb_address">Institution address (optional)</string>
+    <string name="onb_phone">Phone number (optional)</string>
+    <string name="onb_email">Email address (optional)</string>
+    <string name="onb_session">Academic session, e.g. 2026 (optional)</string>
+    <string name="onb_start">Get started</string>
+    <string name="onb_name_required">Please enter the teacher name.</string>
+
+    <!-- About -->
+    <string name="about_title">About</string>
+    <string name="about_developer">Developer</string>
+    <string name="about_developer_name">Abdullah al Fahim</string>
+    <string name="about_qualification">B.Sc. (Honours), Department of Zoology</string>
+    <string name="about_institution">Gurudayal Government College</string>
+    <string name="about_session">Session 2020–2021</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_contact">Contact</string>
+    <string name="about_copyright">© 2026 Abdullah al Fahim. All rights reserved.</string>
+</resources>
