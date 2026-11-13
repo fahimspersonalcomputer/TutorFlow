@@ -1,12 +1,11 @@
 import java.util.Properties
 
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.plugin.compose")
-    id("com.google.devtools.ksp")
-    id("com.google.dagger.hilt.android")
+    id("com.android.application") version "9.1.1" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.3.10" apply false
+    id("com.google.devtools.ksp") version "2.3.11" apply false
+    id("com.google.dagger.hilt.android") version "2.60" apply false
 }
-
 // Release signing: only active when keystore.properties exists (created by scripts/make-keystore.sh).
 val keystoreProps = Properties().apply {
     val f = rootProject.file("keystore.properties")
