@@ -1,11 +1,10 @@
-// Versions verified against official release notes / release pages on 2026-11-13:
-// AGP 9.1.1, Kotlin 2.3.10, KSP 2.3.11, Hilt 2.60 (Hilt plugin >= 2.59 requires AGP 9 + Gradle 9.1+).
-// Plugins are declared here with versions (apply false) so the :app module can apply them by id.
+import java.util.Properties
+
 plugins {
-    id("com.android.application") version "9.1.1" apply false
-    id("org.jetbrains.kotlin.plugin.compose") version "2.3.10" apply false
-    id("com.google.devtools.ksp") version "2.3.11" apply false
-    id("com.google.dagger.hilt.android") version "2.60" apply false
+    id("com.android.application")
+    id("org.jetbrains.kotlin.plugin.compose")
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 // Release signing: only active when keystore.properties exists (created by scripts/make-keystore.sh).
